@@ -7,6 +7,20 @@ require('dotenv').config()
 
 app.use(cors());
 
+
+app.get('/', (req, res) => {
+
+
+  // https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
+  console.log("req.params is: ", req.params); 
+
+  const obj = {"test": "test"}; 
+
+  res.header("Access-Control-Allow-Origin", "http://localhost:3002");
+  res.send(obj); 
+
+})
+
 app.get('/fetchConsumerComplaints/:state', (req, res) => {
 
 
