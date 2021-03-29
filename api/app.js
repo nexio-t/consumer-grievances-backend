@@ -32,7 +32,7 @@ app.get('/fetchConsumerComplaints/:state', (req, res) => {
     // res.header("Access-Control-Allow-Origin", "http://localhost:3002");
 
     // https://aqueous-atoll-87775.herokuapp.com/
-    res.redirect(`https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/geo/states/?${state}`)
+    res.redirect(`https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/geo/states/?state=${state}`)
 
 })
 
