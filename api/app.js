@@ -11,7 +11,7 @@ app.get("/fetchConsumerComplaints/:state", (req, res) => {
   const { state } = req.params;
 
   res.redirect(
-    `https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/geo/states/?state=${state}&date_received_max=2020-12-31&date_received_min=2020-01-01`
+    `https://aqueous-atoll-87775.herokuapp.com/https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/geo/states/?state=${state}&date_received_max=2020-12-31&date_received_min=2020-01-01`
   );
 });
 
