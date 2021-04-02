@@ -19,7 +19,7 @@ app.get("/fetchRobocallComplaints/:state", (req, res) => {
   const { state } = req.params;
 
   res.redirect(
-    `https://api.ftc.gov//v0/dnc-complaints?api_key=${process.env.API_KEY}&state="${state}"&created_date_from="2020-01-01"&created_date_to="2020-12-31"`
+    `https://aqueous-atoll-87775.herokuapp.com/https://api.ftc.gov//v0/dnc-complaints?api_key=${process.env.API_KEY}&state="${state}"&created_date_from="2020-01-01"&created_date_to="2020-12-31"`
   );
 });
 
