@@ -11,7 +11,7 @@ app.get("/fetchConsumerComplaints/:state", (req, res) => {
   const { state } = req.params;
 
   res.redirect(
-    `https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/geo/states/?state=${state}&date_received_max=2020-12-31&date_received_min=2020-01-01`
+    `https://aqueous-atoll-87775.herokuapp.com/https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/geo/states/?state=${state}&date_received_max=2020-12-31&date_received_min=2020-01-01`
   );
 });
 
@@ -19,16 +19,16 @@ app.get("/fetchRobocallComplaints/:state", (req, res) => {
   const { state } = req.params;
 
   res.redirect(
-    `https://api.ftc.gov//v0/dnc-complaints?api_key=${process.env.API_KEY}&state="${state}"&created_date_from="2020-01-01"&created_date_to="2020-12-31"`
+    `https://aqueous-atoll-87775.herokuapp.com/https://api.ftc.gov//v0/dnc-complaints?api_key=${process.env.API_KEY}&state="${state}"&created_date_from="2020-01-01"&created_date_to="2020-12-31"`
   );
 });
 
 app.get("/fetchPopulationData", (req, res) => {
   res.redirect(
-    `https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest`
+    `https://aqueous-atoll-87775.herokuapp.com/https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest`
   );
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`App listening at http://localhost:${port}`);
 });
