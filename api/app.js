@@ -25,7 +25,7 @@ app.get("/fetchRobocallComplaints/:state", (req, res) => {
 
 app.get("/fetchPopulationData", (req, res) => {
   res.redirect(
-    `https://aqueous-atoll-87775.herokuapp.com/https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest`
+    `https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest`
   );
 });
 
