@@ -1,6 +1,6 @@
 # Consumer Grievances Backend
 
-A web app to fetch consumer complaints from the FTC and Consumer Financial Protection Bureau. Per exercise instructions, APIs were sourced from [data.gov](https://www.data.gov/). This repo only contains the backend.   
+A web app to fetch consumer complaints from the FTC and Consumer Financial Protection Bureau. Per exercise instructions, APIs were sourced from [data.gov](https://www.data.gov/). This repo only contains the backend.    
 
 ## Installation
 
